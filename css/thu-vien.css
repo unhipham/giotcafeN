@@ -1,0 +1,672 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+	background-color:rgba(0,0,0,0.05);
+	color: rgba(0,0,0,.8);
+	font-family: "Exo 2", sans-serif;
+	font-size: 16px;
+	margin: 0
+}
+.fontbaybay
+{  
+	font-family: "Fleur De Leah", cursive;
+	color: rgba(255,206,0,1.00)
+}
+h1{ font-size: 6vw}
+
+@media (min-width:600px)
+{
+	h1{ font-size: 4vw}
+}
+
+@media (min-width:1000px)
+{
+	h1{ font-size: 3vw}
+}
+.hihi{
+	color: #DA9000
+}
+
+h2{ font-size: 2.5rem}
+h3{ font-size: 2rem;}
+h4{ font-size: 1.75rem}
+h5{ font-size: 1.5rem}
+h6{ font-size: 1rem}
+h1,h2,h3,h4,h5,h6,p{ margin-top: 0; margin-bottom: 5px}
+
+a
+{
+	color:rgba(201,169,0,1.00);
+	text-decoration: none
+}
+a:hover
+{
+	color: deeppink
+}
+.container
+{
+	width: 80%;
+	margin: auto;
+	/*border: 2px solid red;*/
+}
+/* tao 1 hang cho cac cot */
+*{box-sizing: border-box}
+.row
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%; }
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid red*/
+}
+/*--------------- chia cot cho tablet - ipad-------*/
+@media (min-width:600px)
+		{
+		.col-md-1 {width: 8.33%; }
+		.col-md-2 {width: 16.66%; }
+		.col-md-3 {width: 25%;}
+		.col-md-4 {width: 33.33%;}
+		.col-md-5 {width: 41.66%;}
+		.col-md-6 {width: 50%;}
+		.col-md-7 {width: 58.33%;}
+		.col-md-8 {width: 66.66%;}
+		.col-md-9 {width: 75%;}
+		.col-md-10 {width: 83.33%;}
+		.col-md-11 {width: 91.66%;}
+		.col-md-12 {width: 100%;}
+		}
+@media (min-width:1000px)
+		{
+		.col-lg-1 {width: 8.33%; }
+		.col-lg-2 {width: 16.66%; }
+		.col-lg-3 {width: 25%;}
+		.col-lg-4 {width: 33.33%;}
+		.col-lg-5 {width: 41.66%;}
+		.col-lg-6 {width: 50%;}
+		.col-lg-7 {width: 58.33%;}
+		.col-lg-8 {width: 66.66%;}
+		.col-lg-9 {width: 75%;}
+		.col-lg-10 {width: 83.33%;}
+		.col-lg-11 {width: 91.66%;}
+		.col-lg-12 {width: 100%;}
+		}
+.text-center{ text-align: center}
+.text-end{ text-align: right}
+.text-start{ text-align: left}
+.img-100{ width: 100%; height: auto}
+.d-flex{ 
+			display: flex;
+			flex-wrap: wrap
+		}
+/* chia tach theo chieu ngang*/
+		.justify-content-center{ justify-content: center}
+		.justify-content-between{ justify-content:space-between}
+		.justify-content-start{ justify-content:flex-start}
+		.justify-content-end{ justify-content: flex-end}
+		.justify-content-around{ justify-content: space-around}
+/*chia cach theo chieu doc ..*/		
+.align-items-center{ align-items: center}
+.align-items-end{ align-items: flex-end}
+.align-items-start{ align-items:flex-start}
+.align-items-stretch{ align-items:stretch}
+/*--- huong di cua cac item trong flex*/
+.flex-row{ flex-direction: row}
+.flex-row-reverse{ flex-direction: row-reverse}
+.flex-column{ flex-direction:column}
+.flex-column-reverse{ flex-direction:column-reverse}
+
+
+.d-flex {
+    height: 100%; /* Đảm bảo chiều cao đầy đủ cho cột */
+}
+
+h3 {
+    margin-top: 0; /* Xóa khoảng cách trên h3 */
+}
+
+h6 {
+    margin-bottom: 10px; /* Thêm khoảng cách dưới h6 */
+}
+
+p {
+    margin-bottom: 0; /* Xóa khoảng cách dưới cùng cho p */
+}
+
+/* Thêm padding cho container */
+.container-fluid {
+    padding: 0;
+}
+
+/* Thêm hiệu ứng cho hình ảnh nếu cần */
+.hinhcafe {
+    width: 80%;
+    height: auto;
+}
+.hinhcafe {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng cột */
+    height: auto; /* Giữ nguyên tỷ lệ hình ảnh */
+   
+    transition: transform 0.2s; /* Hiệu ứng chuyển động khi hover */
+}
+body {
+    background-color: #F2E3D8; /* Thay đổi màu sắc theo ý muốn */
+}
+
+.row {
+    width: 100%; /* Đảm bảo hàng chiếm toàn bộ chiều rộng */
+    margin: 20px 0; /* Khoảng cách giữa các hàng */
+	font-size: 20px
+}
+
+.matcha {
+    max-width: 80%; /* Hình ảnh không vượt quá cột */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+.matcha {
+    width: 50%;
+    height: auto;
+}
+.matcha {
+    width: 50%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng cột */
+    height: auto; /* Giữ nguyên tỷ lệ hình ảnh */
+    border-radius: 7%; /* Tạo hình tròn */
+    border: 20px solid #FFFFFF; /* Viền xung quanh */
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.7); /* Bóng đổ */
+    transition: transform 0.2s; /* Hiệu ứng chuyển động khi hover */
+}
+
+
+.matcha:hover {
+    transform: scale(1.05); /* Phóng to một chút khi hover */
+}
+
+h2 {
+    color: #4CAF50; /* Màu sắc cho tiêu đề */
+}
+.h21{
+	color: #975E3A
+}
+
+p {
+    color: #333; /* Màu sắc cho đoạn văn */
+    line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
+}
+
+@media (min-width: 768px) {
+    .row {
+        justify-content: space-between; /* Căn chỉnh đều các cột trên màn hình lớn */
+    }
+}
+a {
+    text-decoration: none; /* Bỏ gạch chân cho tất cả các liên kết */
+    font-size: 40px; /* Kích thước chữ */
+}
+
+.fa-facebook {
+    color: #3b5998; /* Màu sắc của link Facebook */
+    transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
+}
+
+.fa-facebook:hover {
+    color: palevioletred; /* Màu sắc khi rê chuột */
+}
+
+.fa-pinterest {
+    color: #E60023; /* Màu sắc của link Pinterest */
+    transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
+}
+
+.fa-pinterest:hover {
+    color: #00A998; /* Màu sắc khi rê chuột */
+}
+
+.fa-google {
+    color: green; 
+    transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
+}
+
+.fa-google:hover {
+    color: #1753D7; /* Màu sắc khi rê chuột */
+}
+
+a:hover {
+    text-decoration: underline; /* Gạch chân khi rê chuột */
+}
+
+
+
+.social-icon {
+	margin: 25px ;
+	display: inline-block
+   
+}
+
+.text-trang{color: aliceblue}
+
+.banner{
+	position: relative;
+	overflow: hidden
+}
+.banner-caption
+{
+	position: absolute;
+	width: 35%;
+	left: 50%; top: 15%;
+	color: #fff
+}
+@media (max-width:900px)
+{
+	.banner .img-100
+	{
+		width: 150%;
+		height: auto;
+		margin-left: -150px
+	}
+	.banner-caption{	
+		width: 70%;
+		left: 25%; top: 5%; 
+	}
+}
+@media (max-width:600px)
+{
+	.banner
+	{
+		width: 100%;
+		height: 100%;
+	}
+	.banner .img-100
+	{
+		width: 300%;
+		height: auto;
+		margin-left: -200px
+	}
+
+}
+nav{ 
+	background: #593413;
+	position: relative;
+
+	/*<!--border: 2px solid red-->*/
+}
+nav .btn-toggle
+{
+	position: absolute;
+	top: -40px;
+	right: 2px;
+	width: 35px; 
+	height: 32px;
+	font-size: 18px;
+	color: #4B4B4B
+}
+nav ul
+{ 
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+nav ul li
+{
+	position: relative
+}
+nav ul li a
+{
+	display: block;
+	padding: 5px 20px;
+	border-bottom: 1px dashed #77964A;
+	color: #fff;
+	transition: all 0.5s
+}
+nav ul li a:hover
+{
+	color: #FBFF17;
+	padding-left: 25px
+}
+#menu{ display: none}
+#dropdown-menu
+{
+	padding-left: 10px;
+	background-color: aliceblue;
+	display: none
+	
+}
+@media (min-width:900px)
+{
+	#menu
+	{ display: block !important}
+	.btn-toggle
+	{ display: none}
+	nav ul
+	{ 
+		display: flex;
+		justify-content: center;
+		padding: 10px
+	}
+	nav ul li a {
+		border-bottom: none
+	}
+	#dropdown-menu
+	{
+		position: absolute;
+		z-index: 1000;
+		left: 10%;
+		top: 130%;
+		flex-direction: column;
+		padding: 5px 10px;
+		width: 200px;
+	}
+}
+.menunhi {
+    font-size: 20px; /* Kích thước chữ cho menu */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Loại bỏ dấu đầu dòng */
+    display:flex; /* Hiển thị menu theo hàng ngang */
+}
+
+.menunhi li {
+    position: relative; /* Để định vị submenu */
+    margin-right: 20px; /* Khoảng cách giữa các mục */
+}
+
+.menunhi a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: white; /* Màu chữ */
+    padding: 10px; /* Khoảng cách bên trong */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.menunhi a:hover {
+    color: gold; /* Màu chữ khi hover */
+}
+
+.submenu {
+    display: none; /* Ẩn submenu theo mặc định */
+    position: absolute; /* Định vị submenu */
+    top: 100%; /* Đặt submenu ngay dưới mục cha */
+    left: 0; /* Căn lề bên trái */
+    background-color: #F2E3D8; /* Màu nền cho submenu */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6); /* Đổ bóng cho submenu */
+    z-index: 1000; /* Đảm bảo submenu hiển thị trên các phần tử khác */
+	white-space: nowrap; /* Ngăn ngừa ngắt dòng trong submenu */
+}
+
+.menunhi li:hover .submenu {
+    display:flex; /* Hiển thị submenu khi hover */
+    animation: fadeIn 0.5s; /* Hiệu ứng chuyển động */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.submenu li {
+    margin: 0 10px; /* Loại bỏ margin cho các mục submenu */
+	 display: flex; /* Đảm bảo các mục nằm ngang */
+}
+
+.submenu a {
+    padding: 10px 15px; /* Khoảng cách bên trong cho mục submenu */
+    display: block; /* Đảm bảo mục submenu chiếm toàn bộ chiều rộng */
+    color: black; /* Màu chữ cho submenu */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+	font-size: 18px; /* Kích thước chữ cho submenu */
+}
+
+.submenu a:hover {
+    background-color: khaki; /* Màu nền khi hover trên submenu */
+    color: black; /* Màu chữ khi hover trên submenu */
+}
+.textcolor
+{
+	color: brown;
+}
+.textuudai{
+	color: #4A8300
+}
+footer {
+    background-color: #593516; /* Màu nền tối */
+	
+}
+.text-white{
+	color: white
+}
+
+footer a {
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+	 color: #ffffff; /* Màu chữ liên kết */
+}
+.textp{
+	color:white
+}
+footer a:hover {
+    text-decoration: inherit; /* Gạch chân khi di chuột qua liên kết */
+	color: #262626;
+	
+}
+.textfan{
+	font-size: 20px;
+}
+.text-red{
+	color: #F2E3D8
+}
+.textW
+{
+	color: white
+}
+.pw
+{
+	color: white
+}
+ .h33
+{
+	color: #F2E3D8
+}
+
+footer {
+    background-color: #593516; /* Màu nền cho footer */
+    color: white; /* Màu chữ */
+    padding: 50px 0;
+}
+
+footer .h33 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .pw {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer .pw ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .pw li {
+    margin-bottom: 5px;
+}
+
+footer .text-red {
+    color: red;
+}
+
+footer .textW {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.row {
+    display: flex; /* Sử dụng Flexbox cho các cột */
+    flex-wrap: wrap; /* Đảm bảo các cột sẽ tự động xuống dòng nếu không đủ không gian */
+}
+
+.col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Các phần tử căn từ trên xuống */
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Căn chỉnh các phần tử trong cột */
+    height: 100%; /* Đảm bảo các cột có chiều cao đều */
+}
+
+.col-md-4 h3, .col-md-4 p {
+    margin: 0; /* Loại bỏ margin mặc định để các phần tử thẳng hàng */
+}
+
+/* Cài đặt cho container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Đảm bảo ảnh chiếm hết chiều rộng và chiều cao */
+.img-100 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo, bao phủ toàn bộ khung */
+}
+
+/* Lớp phủ nền đen mờ */
+.overlay {
+    position: absolute;
+    top: 50%;  /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    width: 90%; /* Lớp phủ chiếm 60% chiều rộng của ảnh */
+    height: 90%; /* Lớp phủ chiếm 60% chiều cao của ảnh */
+    transform: translate(-50%, -50%); /* Căn giữa lớp phủ */
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen mờ với độ trong suốt 50% */
+    z-index: 1; /* Đảm bảo lớp phủ nằm dưới nội dung */
+}
+/* Nội dung chữ trên lớp phủ */
+.text-overlay {
+   
+    color: white;
+    z-index: 2; /* Đảm bảo chữ hiển thị trên lớp phủ */
+}
+
+.text-overlay h2 {
+    font-size: 36px;
+    font-weight: bold;
+	color: #E55A00
+	
+  
+}
+
+.text-overlay p {
+    font-size: 18px;
+	color: aliceblue
+  
+}
+.h41{
+	color: #78482A
+}/* Thanh tìm kiếm */
+.search-form {
+    display: flex; /* Sắp xếp các phần tử trong form theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử trong form */
+    margin-left: auto; /* Đẩy thanh tìm kiếm ra sát lề phải */
+}
+
+/* Ô input tìm kiếm */
+.search-input {
+    padding: 5px 10px; /* Khoảng cách trong ô input */
+    font-size: 16px; /* Kích thước chữ */
+    border: 1px solid #ccc; /* Đường viền của ô input */
+    border-radius: 20px 0 0 20px; /* Bo góc cho ô input */
+    outline: none; /* Xóa outline khi nhấn vào ô input */
+}
+
+/* Nút tìm kiếm */
+.search-button {
+    padding: 6px 12px; /* Khoảng cách trong nút tìm kiếm */
+    background-color: #987555; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Xóa viền nút */
+    border-radius: 0 15px 15px 0; /* Bo góc cho nút tìm kiếm */
+    cursor: pointer; /* Đổi con trỏ khi hover */
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #DC5F00; /* Màu nền khi hover nút */
+}
+
+/* Điều chỉnh chiều rộng của thanh tìm kiếm trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Đặt menu theo chiều dọc trên màn hình nhỏ */
+        align-items: flex-start; /* Căn chỉnh các mục menu về bên trái */
+    }
+    .search-form {
+        width: 100%; /* Đảm bảo thanh tìm kiếm chiếm toàn bộ chiều rộng */
+    }
+}
+.icon-blog a
+{
+	background: white;
+	display: inline-block;
+	width: 80px; height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 80px;
+	color: #333;
+	margin: 5px
+}
+.icon-blog a:hover
+{ 
+	box-shadow: 0 0 15px rgba(0,0,0,0.4)
+}
+.card-blog-img
+{
+	position: relative;
+	perspective: 500px
+}
+.card-blog-img .content-blog
+{
+	position: absolute; 
+	width: 80%; height: 80%;
+	left: 10%; top:10%;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+	transform: scale(0) rotateX(180deg) rotateY(-180deg);
+/*	transform-style: preserve-3d*/
+}
+.card-blog-img:hover > .content-blog
+{
+		transform:scale(1) rotateX(0deg) rotateY(0)
+}
+.h3black
+{
+	color: #1B1B1B
+}
+.h5w{color: aliceblue}
